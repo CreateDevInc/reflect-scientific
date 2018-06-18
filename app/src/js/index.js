@@ -15,7 +15,5 @@ if (process.env["CRYOMETRIX_BUILD"] !== "prod") {
 
 import "./product-slider";
 import "../sass/styles.scss";
-import "./switch";
 import "./header";
-import "./calculator-popup"
 // import './contact-popup'

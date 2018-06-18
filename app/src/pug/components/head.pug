@@ -1,15 +1,13 @@
 //- essential styles inline in the head
 style(type="text/css").
   /* hiding hidden elements immediately on page load (otherwise viewer briefly sees them) */
-  .hide-contact-form, .hide-calc-form,
-  header nav .dropdown > div {
+  .hide-contact-form {
       opacity: 0;
       pointer-events: none;
+      display: none;
   }
 
 link(rel="icon", href="favicon.ico", type="image/x-icon")
 link(rel="shortcut icon", href="favicon.ico", type="image/x-icon")
-link(rel='stylesheet', href='https://use.fontawesome.com/releases/v5.0.12/css/all.css', integrity='sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9', crossorigin='anonymous')
 link(rel="stylesheet", href="styles.css")
 meta(name='viewport', content='width=device-width, initial-scale=1')
-//- meta(name='viewport', content='user-scalable = no')
