@@ -13,6 +13,9 @@
   @else if $media == l {
     @media only screen and (min-width: $break-l) { @content; }
   }
+  @else {
+    @media only screen and (min-width: $media) { @content; } 
+  }
 }
 
 @mixin vertical-flex-center() {

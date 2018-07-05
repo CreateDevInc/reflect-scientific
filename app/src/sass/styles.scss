@@ -6,7 +6,10 @@
 @import 'mixins';
 @import 'variables';
 @import 'home';
+@import 'product-line';
+@import 'company-profile';
 @import 'contact';
+@import 'about';
 @import 'footer';
 @import 'header';
 @import 'product-slider';
@@ -17,7 +20,7 @@
 }
 
 a {
-    color: $logo-blue;
+    color: $reflect-primary;
 }
 
 sup {

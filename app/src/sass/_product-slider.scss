@@ -27,7 +27,7 @@
   
       i {
         width: 5%;
-        color: $logo-blue;
+        color: $reflect-primary;
         cursor: pointer;
         font-size: 40px;
         margin-right: $arrow-margin;
@@ -63,7 +63,7 @@
     }
 
     i.active {
-      color: $logo-blue;
+      color: $reflect-primary;
     }
   }
 

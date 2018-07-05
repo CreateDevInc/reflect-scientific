@@ -11,7 +11,7 @@ header {
         display: flex;
         text-align: right;
         justify-content: space-between;
-        background-color: $logo-blue;
+        background-color: $reflect-primary;
 
         >div {
             display: flex;
@@ -19,11 +19,21 @@ header {
             justify-content: center;
 
             & {
-                margin-right: $header-footer-margins;
+                margin-right: $header-footer-margins-small;
             }
             &:first-child {
-                margin-left: $header-footer-margins;
+                margin-left: $header-footer-margins-small;
                 margin-right: 0;
+            }
+
+            @include screen-size(1372px) {
+                & {
+                    margin-right: $header-footer-margins;
+                }
+                &:first-child {
+                    margin-left: $header-footer-margins;
+                    margin-right: 0;
+                }
             }
 
             @include screen-size(sm) {
@@ -59,7 +69,7 @@ header {
                     color: white;
                     cursor: pointer;
                     display: block;
-                    padding: 25px;
+                    padding: 25px 20px;
                     text-decoration: none;
                     transition-duration: 300ms;
                     &:hover {
@@ -81,14 +91,14 @@ header {
                 pointer-events: none;
                 background-color: #fff;
 
-                border: 3px solid $logo-blue;
+                border: 3px solid $reflect-primary;
                 border-top: none;
 
                 >a {
-                    color: $logo-blue;
+                    color: $reflect-primary;
                     display: block;
                     padding: 10px !important;
-                    border-bottom: 1px solid $logo-blue;
+                    border-bottom: 1px solid $reflect-primary;
                 }
                 >a:last-child {
                     border-bottom: none;
@@ -112,7 +122,7 @@ nav {
         position: fixed;
         top: 30px;
         right: 30px;
-        color: $logo-blue !important;
+        color: $reflect-primary !important;
         font-size: $close-icon;
         z-index: 997;
     }
@@ -176,14 +186,14 @@ nav {
         padding: 0;
 
         .nav-item {
-            color: $logo-blue;
+            color: $reflect-primary;
             padding: 15px;
             background-color: transparent;
             text-decoration: none;
             font-size: 22px;
 
             i {
-                color: $logo-blue;
+                color: $reflect-primary;
             }
         }
 
@@ -203,7 +213,7 @@ nav {
             a {
                 color: #fff;
                 text-align: center;
-                background-color: $logo-blue;
+                background-color: $reflect-primary;
                 // width: 100%;
                 width: 220px;
                 display: block;
@@ -227,7 +237,7 @@ nav {
             }
         }
         .dropdown.expanded ul {
-            border: 1px solid $logo-blue;
+            border: 1px solid $reflect-primary;
             max-height: 500px;
         }
     }

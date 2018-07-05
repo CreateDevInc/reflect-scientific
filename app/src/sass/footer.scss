@@ -24,7 +24,7 @@ footer {
             li {
                 list-style: none;
                 a {
-                    color: $logo-blue;
+                    color: $reflect-primary;
                     padding: 5px;
                     display: block;
                     font-size: $normal;
@@ -55,7 +55,7 @@ footer {
                 text-align: center;
                 border-radius: 1px;
                 text-decoration: none;
-                background-color: $logo-blue;
+                background-color: $reflect-primary;
                 transition-duration: 300ms;
             }
             a:hover {
@@ -82,7 +82,7 @@ footer {
                 transition-duration: 300ms;
 
                 &:hover {
-                    color: $logo-blue;
+                    color: $reflect-primary;
                 }
             }
             @include screen-size(mobile) {

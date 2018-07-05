@@ -1,0 +1,71 @@
+.product-line-main-content {
+    display: flex;
+    flex-direction: column;
+    .product-line {
+        width: 100%;
+        display: flex;
+        min-height: 400px;
+        align-items: center;
+        justify-content: space-between;
+        padding: $spacing-sm;
+        color: white;
+        flex-direction: row;
+        box-sizing: border-box;
+
+        &:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        &.cryometrix {
+            background-color: $cryometrix-logo-blue;
+        }
+        &.visacon {
+            background-color: $visacon-logo-red;
+        }
+        &.lcgc {
+            background-color: $lcgc-logo-purple;
+        }
+        &.gcferrules {
+            background-color: $gcferrules-logo-blue;
+        }
+        &.hplcdetectors {
+            background-color: $hplcdetectors-logo-red;
+        }
+        .product-image {
+            width: 40%;
+            height: 200px;
+            padding: 40px 80px;
+            box-sizing: border-box;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+        .product-description {
+            max-width: 60%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: $spacing-md;
+            box-sizing: border-box;
+            h3 {
+                margin-bottom: $spacing-md;
+                font-weight: bold;
+            }
+            p {
+
+            }
+            a {
+                width: 75px;
+                text-decoration: none;
+                padding: $spacing-sm;
+                margin: $spacing-sm;
+                color: white;
+                background-color: $reflect-primary;
+                align-self: center;
+                text-align: center;
+            }
+        }
+    }
+}

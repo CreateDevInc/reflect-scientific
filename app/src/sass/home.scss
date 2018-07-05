@@ -51,7 +51,7 @@
         color: white;
         padding: 15px;
         text-decoration: none;
-        background-color: $logo-blue;
+        background-color: $reflect-primary;
         margin-top: 20px;
     }
     h1,
@@ -69,7 +69,9 @@
 
 @include clearfix(main);
 
-main {
+.home-main-content {
+    display: flex;
+
     $container-width: 90%;
     $container-spacing: 40px;
 
@@ -83,77 +85,12 @@ main {
         max-width: 800px;
         margin: $container-spacing auto;
     }
+    .column {
+        padding: $spacing-sm;
+        margin: 0 $spacing-sm;
 
-    a {
-        float: left;
-        background-color: #e8e8e8;
-        text-decoration: none;
-
-        // 4 column layout
-        @media screen and (min-width: $four-column-break) {
-            width: $container-width / 4;
-            margin-left: (100% - $container-width) / 5;
-        }
-        // 2 column layout
-        @media screen and (max-width: $two-column-break) {
-            width: $container-width / 2;
-            margin-left: (100% - $container-width) / 3;
-            margin-bottom: $container-spacing;
-        }
-        // 1 column layout
-        @media screen and (max-width: $one-column-break) {
-            float: none;
-            width: 92%;
-            max-width: 315px;
-            box-sizing: border-box;
-            margin: ($container-spacing) auto;
-        }
-
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-
-        .content-container {
-            position: relative;
-            text-align: center;
-        }
-
-        img {
-            height: 100%;
-            max-height: 280px;
-            width: auto;
-            max-width: 100%;
-        }
         p {
-            top: 0;
-            left: 0;
-            color: #fff;
-            width: 100%;
-            height: 100%;
-            padding: 15px;
-            z-index: 10;
-            display: block;
-            position: absolute;
-            text-align: left;
-            box-sizing: border-box;
-            font-size: 19px;
-            background-color: rgba(0,0,0,.45);
-
-            opacity: 0;
-            @include transition(.5s, opacity);
+            text-align: justify;
         }
-
-        &:hover p {
-            opacity: 1;
-        }
-    }
-
-    h2 {
-        color: #fff;
-        padding: 10px;
-        font-size: 16px;
-        font-weight: 100;
-        background-color: $logo-blue;
     }
 }
