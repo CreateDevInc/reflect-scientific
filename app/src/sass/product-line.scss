@@ -3,17 +3,24 @@
     flex-direction: column;
     .product-line {
         width: 100%;
-        display: flex;
-        min-height: 400px;
-        align-items: center;
-        justify-content: space-between;
-        padding: $spacing-sm;
         color: white;
-        flex-direction: row;
+        display: flex;
+        padding: $spacing-sm;
+        min-height: 400px;
         box-sizing: border-box;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+
+        @include screen-size(mobile) {
+            flex-direction: column;
+        }
 
         &:nth-child(even) {
             flex-direction: row-reverse;
+            @include screen-size(mobile) {
+                flex-direction: column;
+            }
         }
 
         &.cryometrix {
@@ -36,6 +43,10 @@
             height: 200px;
             padding: 40px 80px;
             box-sizing: border-box;
+            @include screen-size(mobile) {
+                width: 100%;
+                padding: $spacing-sm $spacing-md;
+            }
             img {
                 width: 100%;
                 height: 100%;
@@ -43,12 +54,16 @@
             }
         }
         .product-description {
-            max-width: 60%;
+            width: 60%;
             display: flex;
             flex-direction: column;
             justify-content: center;
             padding: $spacing-md;
             box-sizing: border-box;
+            @include screen-size(mobile) {
+                width: 100%;
+                padding: $spacing-sm $spacing-md;
+            }
             h3 {
                 margin-bottom: $spacing-md;
                 font-weight: bold;

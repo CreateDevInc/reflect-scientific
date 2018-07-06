@@ -1,0 +1,42 @@
+.profiles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: $spacing-md 0;
+
+    .profile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 33%;
+        min-width: 200px;
+        padding: $spacing-sm;
+        box-sizing: border-box;
+
+        img {
+            width: 200px;
+            height: 200px;
+        }
+
+        p:first-of-type {
+            font-weight: bold;
+            font-size: $med-big;
+        }
+        a {
+            width: 100px;
+            text-decoration: none;
+            padding: $spacing-sm;
+            margin: $spacing-sm;
+            color: white;
+            background-color: $reflect-primary;
+            text-align: center;
+            &:hover {
+                background-color: $reflect-primary-light;
+                cursor: pointer;
+            }
+        }
+        .hidden {
+            display: none;
+        }
+    }
+}

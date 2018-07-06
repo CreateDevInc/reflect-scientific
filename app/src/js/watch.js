@@ -8,3 +8,6 @@ import '../pug/index.pug';
 import '../pug/contact.pug';
 import '../pug/components/contact-component.pug';
 import '../pug/thanks.pug';
+import '../pug/company-profile.pug';
+import '../pug/product-lines.pug';
+import '../pug/about.pug';

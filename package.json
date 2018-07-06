@@ -9,7 +9,7 @@
     "views": "gulp pug",
     "images": "gulp images",
     "gulp": "gulp",
-    "deploy-test": "surge app/dist intelligent-oatmeal.surge.sh"
+    "deploy-test": "surge app/dist elite-hole.surge.sh"
   },
   "keywords": [],
   "author": "",
