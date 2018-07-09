@@ -42,8 +42,8 @@
                 top: 50%;
                 left: 50%;
                 transform: translate(-50%, -50%);
-                opacity: 0.2; /* Firefox, Chrome, Safari, Opera, IE >= 9 (preview) */
-                filter:alpha(opacity=20); /* for <= IE 8 */
+                opacity: 0.1; /* Firefox, Chrome, Safari, Opera, IE >= 9 (preview) */
+                filter:alpha(opacity=10); /* for <= IE 8 */
             }
         }
 
