@@ -1,0 +1,12 @@
+#!/bin/bash
+
+npm run build
+git add app/build
+git commit -m "newest build committed"
+git push
+
+ssh reflect-prod << EOF
+  cd /var/www/html/reflect-scientific
+  sudo git pull
+EOF
+  

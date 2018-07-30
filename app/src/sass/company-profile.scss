@@ -1,27 +1,40 @@
 .profiles {
-    display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     margin: $spacing-md 0;
 
     .profile {
         display: flex;
-        flex-direction: column;
         align-items: center;
-        width: 33%;
-        min-width: 200px;
-        padding: $spacing-sm;
+        padding: 55px 0;
         box-sizing: border-box;
+
+        @media screen and (max-width: 650px) {
+            display: block;
+            > div:first-child {
+                text-align: center;
+                padding-bottom: 15px;
+            }
+        }
+
+        > div:first-child p {
+            text-align: center;
+            padding: 0;
+
+            &:first-of-type {
+                font-weight: bold;
+                font-size: $med-big;
+            }
+        }
+
+        p {
+            padding: 7px 50px;
+        }
 
         img {
             width: 200px;
             height: 200px;
         }
 
-        p:first-of-type {
-            font-weight: bold;
-            font-size: $med-big;
-        }
         a {
             width: 100px;
             text-decoration: none;
