@@ -15,6 +15,9 @@
         @include screen-size(mobile) {
             flex-direction: column;
         }
+        @media screen and (max-width: 1080px) {
+            padding: 50px $spacing-sm;
+        }
         &.cryometrix {
             background-color: $cryometrix-logo-blue;
         }
@@ -39,19 +42,41 @@
             overflow: hidden;
             img {
                 position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
+                @media screen and (max-width: 1080px) {
+                    top: auto;
+                    bottom: -150px;
+                    left: -100px;
+                    height: 120%;
+
+                    &.lcgc {
+                        bottom: 0;
+                        height: 100%;
+                    }
+                }
+                @media screen and (min-width: 1081px) {
+                    bottom: auto;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    height: 80%;
+                }
+                @media screen and (max-width: 460px) {
+                    display: none;
+                }
+
+                &.hplc {
+                    width: 100%;
+                    left: 0;
+                    transform: none;
+                    height: auto;
+                }
+
                 opacity: 0.1;
-                /* Firefox, Chrome, Safari, Opera, IE >= 9 (preview) */
                 filter: alpha(opacity=10);
-                /* for <= IE 8 */
-                height: 80%;
             }
         }
         .product-image {
             width: 50%;
-            height: 200px;
             padding: 40px 80px;
             box-sizing: border-box;
             position: relative;
@@ -61,8 +86,6 @@
             }
             img {
                 width: 100%;
-                height: 100%;
-                object-fit: contain;
                 @media screen and (max-width: 1080px) {
                     display: block;
                     max-width: 600px;
