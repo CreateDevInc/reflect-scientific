@@ -24,10 +24,15 @@ header
       .mobile-container
         i.fas.fa-times
         ul
-          li.logo #[img(src="images/Cryometrix-Logo_color.png")]
+          li.logo #[img(src="images/ReflectColorRough.jpg")]
           li #[a(href="index.html").nav-item Home]
           li #[a(href="product-lines.html").nav-item Product Lines]
-          li #[a(href="company-profile.html").nav-item Company Profile]
+          li.dropdown #[a(href="#").nav-item Corporate Profile#[i.fas.fa-angle-down]]
+            ul              
+              li #[a(href="company-profile.html").nav-item Officers &amp; Directors]
+              li #[a(href="https://finance.yahoo.com/quote/RSCF?ltr=1").nav-item Stock Chart]
+              li #[a(href="#").nav-item Press Releases]
+              li #[a(href="https://www.sec.gov/cgi-bin/browse-edgar?company=Reflect+Scientific&owner=exclude&action=getcompany").nav-item SEC Documents]
           li.contact #[a(href="contact.html" id= "mobile-contact-btn").nav-item Contact Us]
         a(href="#").overlay
       
