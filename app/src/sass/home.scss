@@ -1,5 +1,6 @@
 //styles for the home page
 //styling for hero image slider TEST
+$one-column-break: 600px;
 .hero-slider {
     width: 100%;
     position: relative;
@@ -23,6 +24,9 @@
             color: white;
             margin: 10px 40px;
             z-index: 10;
+            @media screen and (max-width: $one-column-break) {
+                font-size: 20px;
+            }
         }
         a {
             color: white;
@@ -34,6 +38,11 @@
             text-align: center;
             text-decoration: none;
             background-color: $reflect-primary;
+            @media screen and (max-width: $one-column-break) {
+                padding: 5px;
+                font-size: 14px;
+                margin-top: 0;
+            }
         }
     }
     .controls-container {
@@ -52,15 +61,22 @@
             padding: 10px 10px;
             font-size: 40px;
             transition-duration: 500ms;
+            @media screen and (max-width: $one-column-break) {
+                font-size: 25px;
+            }
         }
         .dot-container {
             height: 30px;
             display: flex;
             align-self: flex-end;
+            align-items: flex-end;
         }
         .dot {
             cursor: pointer;
             padding: 5px;
+            @media screen and (max-width: $one-column-break) {
+                font-size: 12px;
+            }
         }
         .active {
             color: $reflect-primary;
@@ -80,6 +96,13 @@
     @media screen and (max-width: $two-column-break) {
         max-width: 800px;
         margin: $container-spacing auto;
+    }
+    @media screen and (max-width: $one-column-break) {
+        display: block;
+        width: 92%;
+        max-width: 430px;
+        box-sizing: border-box;
+        margin: ($container-spacing) auto;
     }
     .column {
         padding: $spacing-sm;
