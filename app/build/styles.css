@@ -2,13 +2,18 @@
   width: 100%;
   position: relative;
   background-color: #7070a8; }
+  @media screen and (max-width: 530px) {
+    .hero-slider {
+      display: flex;
+      justify-content: center;
+      overflow-x: hidden; } }
   .hero-slider img {
     width: 100%;
     max-width: 100vw; }
     @media screen and (max-width: 530px) {
       .hero-slider img {
         width: unset;
-        max-width: 2000px;
+        max-width: unset;
         height: 180px; } }
   .hero-slider .overlay {
     position: absolute;
