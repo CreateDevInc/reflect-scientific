@@ -5,6 +5,11 @@
   .hero-slider img {
     width: 100%;
     max-width: 100vw; }
+    @media screen and (max-width: 530px) {
+      .hero-slider img {
+        width: unset;
+        max-width: 2000px;
+        height: 180px; } }
   .hero-slider .overlay {
     position: absolute;
     top: 0;
@@ -20,6 +25,9 @@
       color: white;
       margin: 10px 40px;
       z-index: 10; }
+      @media screen and (max-width: 600px) {
+        .hero-slider .overlay h1 {
+          font-size: 20px; } }
     .hero-slider .overlay a {
       color: white;
       display: inline-block;
@@ -30,6 +38,11 @@
       text-align: center;
       text-decoration: none;
       background-color: #007AC2; }
+      @media screen and (max-width: 600px) {
+        .hero-slider .overlay a {
+          padding: 5px;
+          font-size: 14px;
+          margin-top: 0; } }
   .hero-slider .controls-container {
     position: absolute;
     top: 0;
@@ -46,13 +59,20 @@
       padding: 10px 10px;
       font-size: 40px;
       transition-duration: 500ms; }
+      @media screen and (max-width: 600px) {
+        .hero-slider .controls-container .arrow {
+          font-size: 25px; } }
     .hero-slider .controls-container .dot-container {
       height: 30px;
       display: flex;
-      align-self: flex-end; }
+      align-self: flex-end;
+      align-items: flex-end; }
     .hero-slider .controls-container .dot {
       cursor: pointer;
       padding: 5px; }
+      @media screen and (max-width: 600px) {
+        .hero-slider .controls-container .dot {
+          font-size: 12px; } }
     .hero-slider .controls-container .active {
       color: #007AC2; }
 
@@ -67,6 +87,13 @@ main:after {
   @media screen and (max-width: 1200px) {
     .home-main-content {
       max-width: 800px;
+      margin: 40px auto; } }
+  @media screen and (max-width: 600px) {
+    .home-main-content {
+      display: block;
+      width: 92%;
+      max-width: 430px;
+      box-sizing: border-box;
       margin: 40px auto; } }
   .home-main-content .column {
     padding: 12px;
