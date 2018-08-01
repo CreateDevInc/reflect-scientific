@@ -11,3 +11,4 @@ import '../pug/thanks.pug';
 import '../pug/company-profile.pug';
 import '../pug/product-lines.pug';
 import '../pug/about.pug';
+import '../pug/releases.pug';

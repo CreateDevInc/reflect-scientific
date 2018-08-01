@@ -18,4 +18,5 @@ import "../sass/styles.scss";
 import "./header";
 import "./company-profile";
 import "./hero-slider";
+import "./releases";
 // import './contact-popup'
