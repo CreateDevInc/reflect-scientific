@@ -8,6 +8,11 @@ $one-column-break: 600px;
     img {
         width: 100%;
         max-width: 100vw;
+        @media screen and (max-width: 530px) {
+            width: unset;
+            max-width: 2000px;
+            height: 180px;
+        }
     }
     .overlay {
         position: absolute;
