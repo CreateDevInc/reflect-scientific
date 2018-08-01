@@ -5,12 +5,17 @@ $one-column-break: 600px;
     width: 100%;
     position: relative;
     background-color: rgb(112, 112, 168);
+    @media screen and (max-width: 530px) {
+        display: flex;
+        justify-content: center;
+        overflow-x: hidden;
+    }
     img {
         width: 100%;
         max-width: 100vw;
         @media screen and (max-width: 530px) {
             width: unset;
-            max-width: 2000px;
+            max-width: unset;
             height: 180px;
         }
     }
