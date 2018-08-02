@@ -4,40 +4,43 @@ if (/releases.html$/.test(window.location.href)) {
 
     const postContainer = document.getElementsByClassName('post-container')[0];
     
-
     const ajax = new XMLHttpRequest();
 
     ajax.open('GET', apiURL);
     ajax.responseType = "json";
 
     ajax.onload = () => {
-        
+        let postArr = [];
         for (let i = 0; i < ajax.response.length; i++) {
-            if (postContainer.firstChild.id == "placeholder") {
-                postContainer.removeChild(postContainer.firstChild);
-            }
+            
             const aResponse = ajax.response[i];
 
+            const title = aResponse.title.rendered;
+            const dateField = new Date(aResponse.date);
+            const content = aResponse.excerpt.rendered;
             const post = document.createElement('div');
+            post.classList.add('hidden-post', 'post');
+            post.innerHTML =`
+            <div> 
+                <h2>${title}</h2>
+                <h3>${new Intl.DateTimeFormat('en-US').format(dateField)}</h3>
+                <div>${content}</div>
+            </div>
+            `;
             postContainer.append(post);
-            post.classList.add('post');
-            post.appendChild(document.createElement('h2'));
-            post.appendChild(document.createElement('h3'));
-            post.appendChild(document.createElement('div'));
-
-            const title = post.childNodes[0];
-            const dateField = post.childNodes[1];
-            const content = post.childNodes[2];
+            postArr.push(post);
             
-            title.textContent = aResponse.title.rendered;
-            dateField.textContent = aResponse.date;
-            content.innerHTML = aResponse.excerpt.rendered;
-
-            
-
         }
+        const fadeEach = (arr) => {
+            if (arr.length > 0) {
+                setTimeout(() => {
+                    arr.shift().classList.remove('hidden-post');
+                    fadeEach(arr);
+                }, 700);
+            }
+        }
+        fadeEach(postArr);
         
-
     }
 
     ajax.send();

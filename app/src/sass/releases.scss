@@ -1,20 +1,21 @@
 .releases {
-    >h1,
-    >p {
-        text-align: center;
+    >h1 {
         padding: 20px;
+        text-align: center;
+        font-size: 40px;
     }
     .post-container {
         width: 92%;
         margin: auto;
-        min-height: 50%;
+        min-height: 90%;
         .post {
             margin: 20px 0 20px 0;
+            opacity: 1;
+            transition-duration: 2000ms;
             h2,
             h3,
             p {
                 display: inline-block;
-                background-color: $foot-info;
             }
             h2 {
                 margin: 10px;
@@ -22,6 +23,9 @@
             p {
                 margin-left: 20px;
             }
+        }
+        .hidden-post {
+            opacity: 0;
         }
     }
 }
