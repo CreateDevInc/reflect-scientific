@@ -406,6 +406,7 @@ footer {
       margin-left: 50px; }
     footer .foot-info .foot-about {
       max-width: 550px;
+      margin-left: 50px;
       margin-right: 50px; }
       footer .foot-info .foot-about h3 {
         color: #007AC2;
@@ -433,7 +434,7 @@ footer {
       font-size: 14px;
       font-weight: normal; }
 
-@media screen and (max-width: 630px) {
+@media screen and (max-width: 710px) {
   footer {
     padding-top: 5px; }
     footer .foot-info {
@@ -443,10 +444,14 @@ footer {
       footer .foot-info .foot-contact,
       footer .foot-info .foot-products {
         height: auto;
-        margin: 20px 0; }
+        margin: 20px auto; }
         footer .foot-info .foot-contact a,
         footer .foot-info .foot-products a {
-          margin-left: 0; } }
+          margin-left: 0; }
+      footer .foot-info .foot-contact {
+        margin-top: 60px; }
+      footer .foot-info .foot-contact, footer .foot-info .foot-about {
+        margin-left: 20px; } }
 
 @media only screen and (max-width: 1080px) {
   footer .foot-info {
