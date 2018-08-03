@@ -7,6 +7,9 @@
       display: flex;
       justify-content: center;
       overflow-x: hidden; } }
+  @media screen and (max-width: 600px) {
+    .hero-slider .hide-mobile {
+      display: none; } }
   .hero-slider img {
     width: 100%;
     max-width: 100vw; }
@@ -116,6 +119,9 @@ main:after {
     margin: 0 12px; }
     .home-main-content .column p {
       text-align: justify; }
+      @media screen and (max-width: 600px) {
+        .home-main-content .column p {
+          text-align: left; } }
 
 .product-line-main-content {
   display: flex;
