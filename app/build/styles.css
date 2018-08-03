@@ -359,7 +359,8 @@ footer {
     display: flex;
     justify-content: space-between;
     max-width: 1100px;
-    margin: auto; }
+    margin: auto;
+    overflow-x: hidden; }
     footer .foot-info .container-1 {
       display: flex;
       justify-content: flex-start; }
@@ -448,6 +449,9 @@ footer {
         footer .foot-info .foot-contact a,
         footer .foot-info .foot-products a {
           margin-left: 0; }
+      footer .foot-info .foot-about {
+        width: auto;
+        margin-right: auto; }
       footer .foot-info .foot-contact {
         margin-top: 60px; }
       footer .foot-info .foot-contact, footer .foot-info .foot-about {
