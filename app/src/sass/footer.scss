@@ -11,7 +11,9 @@ footer {
         margin: 0 $header-footer-margins;
         height: 250px;
         display: flex;
-        justify-content: flex-start;
+        justify-content: space-between;
+        max-width: 1100px;
+        margin: auto;
 
         .container-1 {
             display: flex;
@@ -36,11 +38,11 @@ footer {
                 }
             }
         }
-        .foot-contact {
+        > div {
             width: 100%;
             max-width: 250px;
             font-size: $normal;
-            margin-left: 110px;
+            // margin-left: 110px;
 
             p {
                 color: $copy-background;
@@ -64,11 +66,24 @@ footer {
         }
 
         .foot-contact,
-        .foot-products {
+        .foot-products,
+        .foot-about {
             height: 100%;
             display: flex;
             flex-direction: column;
             justify-content: center;
+        }
+        .foot-contact {
+            margin-left: 50px;
+        }
+        .foot-about {
+            max-width: 550px;
+            margin-right: 50px;
+
+            h3 {
+                color: $reflect-primary;
+                margin-bottom: 10px;
+            }
         }
 
         .container-2 {

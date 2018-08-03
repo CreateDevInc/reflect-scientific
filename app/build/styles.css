@@ -29,18 +29,25 @@
     .hero-slider .overlay h1 {
       color: white;
       margin: 10px 40px;
-      z-index: 10; }
+      z-index: 10;
+      text-transform: uppercase;
+      font-size: 30px; }
       @media screen and (max-width: 600px) {
         .hero-slider .overlay h1 {
           font-size: 20px; } }
+    .hero-slider .overlay p {
+      color: white;
+      margin: 0 40px;
+      font-size: 22px; }
     .hero-slider .overlay a {
       color: white;
       display: inline-block;
       height: 20px;
       margin: 20px 40px;
       z-index: 10;
-      padding: 10px;
+      padding: 15px;
       text-align: center;
+      text-transform: uppercase;
       text-decoration: none;
       background-color: #007AC2; }
       @media screen and (max-width: 600px) {
@@ -346,7 +353,9 @@ footer {
     margin: 0 12%;
     height: 250px;
     display: flex;
-    justify-content: flex-start; }
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: auto; }
     footer .foot-info .container-1 {
       display: flex;
       justify-content: flex-start; }
@@ -363,14 +372,13 @@ footer {
         transition-duration: 300ms; }
       footer .foot-info .foot-products li a:hover {
         color: black; }
-    footer .foot-info .foot-contact {
+    footer .foot-info > div {
       width: 100%;
       max-width: 250px;
-      font-size: 17px;
-      margin-left: 110px; }
-      footer .foot-info .foot-contact p {
+      font-size: 17px; }
+      footer .foot-info > div p {
         color: #666666; }
-      footer .foot-info .foot-contact a {
+      footer .foot-info > div a {
         width: 80%;
         color: white;
         margin: 15px auto;
@@ -381,14 +389,23 @@ footer {
         text-decoration: none;
         background-color: #007AC2;
         transition-duration: 300ms; }
-      footer .foot-info .foot-contact a:hover {
+      footer .foot-info > div a:hover {
         background-color: #38bcf3; }
     footer .foot-info .foot-contact,
-    footer .foot-info .foot-products {
+    footer .foot-info .foot-products,
+    footer .foot-info .foot-about {
       height: 100%;
       display: flex;
       flex-direction: column;
       justify-content: center; }
+    footer .foot-info .foot-contact {
+      margin-left: 50px; }
+    footer .foot-info .foot-about {
+      max-width: 550px;
+      margin-right: 50px; }
+      footer .foot-info .foot-about h3 {
+        color: #007AC2;
+        margin-bottom: 10px; }
     footer .foot-info .container-2 {
       color: #666666;
       margin: 0 15px 15px 0;
