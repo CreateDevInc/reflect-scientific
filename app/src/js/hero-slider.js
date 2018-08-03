@@ -4,6 +4,7 @@
         {
             src: "images/hero2.jpg",
             actionText: "See what Reflect can do for you!",
+            subText: "Reflect is a great place to buy things from.",
             actionButtonText: "PRODUCT LINES",
             anchorHref: "product-lines.html",
             imageObject: null,
@@ -11,6 +12,7 @@
         {
             src: "images/hero3.jpg",
             actionText: "Ever get tired of reading?",
+            subText: "Good try.",
             actionButtonText: "Buy now",
             anchorHref: "product-lines.html",
             imageObject: null,
@@ -18,6 +20,7 @@
         {
             src: "images/guy-smiling.jpg",
             actionText: "Yeah buddy?",
+            subText: "Oh yeah buddy.",
             actionButtonText: "Yeah Buddy!",
             anchorHref: "product-lines.html",
             imageObject: null,
@@ -38,6 +41,7 @@
         const controlsContainer = heroSlider.querySelector('.controls-container');
  
         const textAction = document.getElementById('actionText');
+        const subText = document.getElementById('subText');
         const buttonText = document.getElementById('actionButton');
     
         const arrows = controlsContainer.getElementsByClassName('arrow');
@@ -75,6 +79,7 @@
         
         function fillSlide(cur) {
             textAction.textContent = imageArray[cur].actionText;
+            subText.textContent = imageArray[cur].subText;
             buttonText.textContent = imageArray[cur].actionButtonText;
             buttonText.href = imageArray[cur].anchorHref;
             image[0].src = imageArray[cur].imageObject.src;            
