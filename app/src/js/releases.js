@@ -1,6 +1,6 @@
 if (/releases.html$/.test(window.location.href)) {
 
-    const apiURL = "http://localhost/reflect-annoucements/wp-json/wp/v2/posts";
+    const apiURL = "http://ec2-35-171-6-228.compute-1.amazonaws.com/announcements/index.php/wp-json/wp/v2/posts";
 
     const postContainer = document.getElementsByClassName('post-container')[0];
     

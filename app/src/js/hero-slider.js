@@ -2,29 +2,38 @@
   // INSERT/MODIFY NEW IMAGES HERE
   let imageArray = [
     {
-      src: "images/hero2.jpg",
-      actionText: "See what Reflect can do for you!",
-      subText: "Reflect is a great place to buy things from.",
-      actionButtonText: "PRODUCT LINES",
+      src: "images/hero4.jpg",
+      actionText: "Cryogenic Shipping Solutions for Biotech and Beyond",
+      subText: "Whether shipping produce at 4\xB0C or highly sensitive pharmaceuticals at -160\xB0C, we have a solution for you.",
+      actionButtonText: "Check it out",
       anchorHref: "product-lines.html",
       imageObject: null
     },
+    {
+      src: "images/hero2.jpg",
+      actionText: "Helping Fight Cancer",
+      subText: "Cryometrix is working with some of the largest bio/pharma companies to aid the fight against cancer.",
+      actionButtonText: "Fight with us",
+      anchorHref: "product-lines.html",
+      imageObject: null
+    },
+    // {
+    //   src: "images/hero4.jpg",
+    //   actionText: "Looking to Blast Freeze your Bio/Pharma Products?",
+    //   subText: "Cryometrix offers solutions from -90°C blast freezers to -160°C storage freezers.",
+    //   actionButtonText: "Check it out",
+    //   anchorHref: "product-lines.html",
+    //   imageObject: null
+    // },
     {
       src: "images/hero3.jpg",
-      actionText: "Ever get tired of reading?",
-      subText: "Good try.",
-      actionButtonText: "Buy now",
+      actionText: "CAR-T Cancer Therapy",
+      subText: "Cryometrix provides state-of-the-art freezing technology for CAR-T therapy.",
+      actionButtonText: "Check it out",
       anchorHref: "product-lines.html",
       imageObject: null
     },
-    {
-      src: "images/hero4.jpg",
-      actionText: "Yeah buddy?",
-      subText: "Oh yeah buddy.",
-      actionButtonText: "Yeah Buddy!",
-      anchorHref: "product-lines.html",
-      imageObject: null
-    }
+    
   ];
   //Load all images on pageload
   for (let i = 0; i < imageArray.length; i++) {
