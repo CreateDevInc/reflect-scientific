@@ -3,8 +3,8 @@
   let imageArray = [
     {
       src: "images/hero4.jpg",
-      actionText: "Cryogenic Shipping Solutions for Biotech and Beyond",
-      subText: "Whether shipping produce at 4\xB0C or highly sensitive pharmaceuticals at -160\xB0C, we have a solution for you.",
+      actionText: "Cryogenic Shipping Solutions<br> for Biotech and Beyond",
+      subText: "Whether shipping produce at 4\xB0C or highly sensitive<br> pharmaceuticals at -160\xB0C, we have a solution for you.",
       actionButtonText: "Check it out",
       anchorHref: "product-lines.html",
       imageObject: null
@@ -12,7 +12,7 @@
     {
       src: "images/hero2.jpg",
       actionText: "Helping Fight Cancer",
-      subText: "Cryometrix is working with some of the largest bio/pharma companies to aid the fight against cancer.",
+      subText: "Cryometrix is working with some of the largest<br> bio/pharma companies to aid the fight against cancer.",
       actionButtonText: "Fight with us",
       anchorHref: "product-lines.html",
       imageObject: null
@@ -81,9 +81,9 @@
     }
 
     function fillSlide(cur) {
-      textAction.textContent = imageArray[cur].actionText;
-      subText.textContent = imageArray[cur].subText;
-      buttonText.textContent = imageArray[cur].actionButtonText;
+      textAction.innerHTML = imageArray[cur].actionText;
+      subText.innerHTML = imageArray[cur].subText;
+      buttonText.innerHTML = imageArray[cur].actionButtonText;
       buttonText.href = imageArray[cur].anchorHref;
       image[0].src = imageArray[cur].imageObject.src;
     }
