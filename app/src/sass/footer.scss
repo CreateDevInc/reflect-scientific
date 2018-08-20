@@ -1,7 +1,7 @@
 //This file contains all styles for the footer elements
 footer {
     clear: both;
-    background-color: $foot-info;
+    // background-color: $foot-info;
 
     h5 {
         font-size: $headings;
@@ -10,10 +10,11 @@ footer {
     .foot-info {
         margin: 0 $header-footer-margins;
         height: 250px;
-        display: flex;
+        // display: flex;
         justify-content: space-between;
-        max-width: 1100px;
+        // max-width: 1100px;
         margin: auto;
+        overflow-x: hidden;
 
         .container-1 {
             display: flex;
@@ -39,19 +40,21 @@ footer {
             }
         }
         > div {
-            width: 100%;
-            max-width: 250px;
+            // width: 100%;
+            // max-width: 250px;
             font-size: $normal;
             // margin-left: 110px;
 
             p {
-                color: $copy-background;
+                // color: $copy-background;
+                color: #fff;
+                text-align: right;
             }
 
             a {
-                width: 80%;
+                width: 50%;
                 color: white;
-                margin: 15px auto;
+                margin: 15px 0;
                 display: block;
                 padding: 8px 0;
                 text-align: center;
@@ -59,10 +62,16 @@ footer {
                 text-decoration: none;
                 background-color: $reflect-primary;
                 transition-duration: 300ms;
+                float: right;
             }
             a:hover {
-                background-color: $btn-hover;
+                // background-color: $btn-hover;
             }
+        }
+
+        .foot-contact,
+        .foot-about {
+            width: 300px;
         }
 
         .foot-contact,
@@ -72,14 +81,39 @@ footer {
             display: flex;
             flex-direction: column;
             justify-content: center;
+            float: left;
         }
+
+        .foot-contact, .foot-about {
+            padding: 0 50px;
+        }
+
+        @media screen and (max-width: 1000px) {
+            .foot-contact, .foot-about {
+                padding: 0 15px;
+            }
+        }
+
+        .foot-about {
+            padding-right: 0;
+        }
+
         .foot-contact {
-            margin-left: 50px;
+            // margin-left: 50px;
+            // padding-left: 50px;
+            // padding-right: 50px;
+            background-color: $sidebar-color;
         }
         .foot-about {
-            max-width: 550px;
-            margin-left: 50px;
-            margin-right: 50px;
+            // padding-left: 50px;
+            width: 500px;
+            // max-width: 550px;
+            // margin-left: 50px;
+            // margin-right: 50px;
+            > div p {
+                color: #000;
+                text-align: left;
+            }
 
             h3 {
                 color: $reflect-primary;
@@ -123,8 +157,6 @@ footer {
 // Media queries for footer
 footer {
     @media screen and (max-width: 710px) {
-        padding-top: 5px;
-
         .foot-info {
             height: 400px;
             flex-direction: column;
@@ -136,6 +168,11 @@ footer {
                 margin: 20px auto;
 
                 a { margin-left: 0; }
+            }
+
+            .foot-about {
+                width: auto;
+                margin-right: auto;
             }
 
             .foot-contact {
@@ -154,6 +191,34 @@ footer {
         }
         .foot-contact {
             margin-left: 0px;
+        }
+    }
+}
+
+
+$sidebar-break: 870px;
+
+@media screen and (max-width: $sidebar-break) {
+    footer .foot-info {
+        height: auto;
+    }
+
+    footer .foot-info .foot-contact, footer .foot-info .foot-about {
+        height: auto;
+        padding: 30px 10px !important;
+    }
+
+    footer .foot-info .foot-contact {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        > div {
+            width: 100%;
+            max-width: 400px;
+            margin: auto;
+
+            p { text-align: left; }
+            a { float: none; }
         }
     }
 }

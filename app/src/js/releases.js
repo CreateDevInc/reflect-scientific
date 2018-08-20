@@ -1,6 +1,6 @@
 if (/releases.html$/.test(window.location.href)) {
   const apiURL =
-    "http://ec2-35-171-6-228.compute-1.amazonaws.com/announcements/index.php/wp-json/wp/v2/posts";
+    "https://reflectannouncements.tk/announcements/index.php/wp-json/wp/v2/posts/";
 
   const postContainer = document.getElementsByClassName("post-container")[0];
 
@@ -54,8 +54,10 @@ if (/releases.html$/.test(window.location.href)) {
             <div class='relative-container'> 
                 <h2>${title}</h2>
                 <h3>${new Intl.DateTimeFormat("en-US").format(dateField)}</h3>
-                <div>${content.outerHTML}</div>
-                <div class='fade-out-div' id='fade${i}'></div>
+                <div style="position:relative;">
+                  <div class='fade-out-div' id='fade${i}'></div>
+                  ${content.outerHTML}
+                </div>
                 ${readMore.outerHTML}
             </div>
             `;
