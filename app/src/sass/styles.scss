@@ -18,6 +18,10 @@
     font-family: $body-font;
 }
 
+hr {
+    border: 1px solid $reflect-primary;
+}
+
 a {
     color: $reflect-primary;
 }
