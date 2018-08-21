@@ -1,6 +1,20 @@
 //styles for the home page
 //styling for hero image slider TEST
 $one-column-break: 600px;
+$sidebar-width: 400px;
+
+.homepage #wrapper {
+    max-width: none !important;
+    aside {
+        width: $sidebar-width;
+        float: left;
+        background-color: $sidebar-color;
+    }
+    > div {
+        margin-left: $sidebar-width;
+    }
+}
+
 .hero-slider {
     width: 100%;
     position: relative;

@@ -206,6 +206,14 @@ $sidebar-break: 870px;
     footer .foot-info .foot-contact, footer .foot-info .foot-about {
         height: auto;
         padding: 30px 10px !important;
+        margin: 0;
+    }
+
+    footer .foot-info {
+        .foot-contact > div, .foot-about > div {
+            margin-left: 10px;
+            padding-left: 0;
+        }
     }
 
     footer .foot-info .foot-contact {
@@ -215,10 +223,21 @@ $sidebar-break: 870px;
         > div {
             width: 100%;
             max-width: 400px;
-            margin: auto;
 
             p { text-align: left; }
             a { float: none; }
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    footer .foot-info {
+        .foot-contact > div, .foot-about > div {
+            margin-left: 0;
+
+            p {
+                padding-right: 10px;
+            }
         }
     }
 }
