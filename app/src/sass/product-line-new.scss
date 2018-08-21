@@ -1,14 +1,24 @@
 .product-line-new {
   margin-top: 72px;
-  footer .foot-info .foot-contact {
-    width: 40%;
-    box-sizing: border-box;
+  @media screen and (max-width: 1080px){
+    margin-top: 60px;
+  }
+  @media screen and (min-width: 850px){
+    footer .foot-info .foot-contact {
+      width: 40%;
+      box-sizing: border-box;
+    }
   }
 }
 
 .p-line-new {
 
   display: flex;
+
+  @media screen and (max-width: 850px) {
+    display: block;
+    
+  }
   .left-content {
     display: inline-block;
     width: 40%;
@@ -18,9 +28,10 @@
     
     background-color: $sidebar-color;
 
+
     img {
       
-      max-width: 80%;
+      width: 85%;
       margin: auto;
     }
 
@@ -32,7 +43,15 @@
       display: inline-block;
       margin-top: 10px;
     }
+    
 
+    @media screen and (max-width: 850px) {
+      text-align: center;
+      padding-bottom: 15px;
+      //background-color: white;
+      width: 100%;
+      //color: $sidebar-color;
+    }
 
   }
   
@@ -45,6 +64,10 @@
     p {
       padding: 7px 0 7px 0;
       color: $sidebar-color;
+    }
+    @media screen and (max-width: 850px) {
+      float: none;
+      width: 100%;
     }
   }
 }
