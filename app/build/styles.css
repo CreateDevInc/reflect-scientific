@@ -1,4 +1,50 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400);@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);.hero-slider {
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400);@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);.homepage #wrapper {
+  max-width: none;
+  position: relative; }
+
+.homepage main {
+  padding-left: 400px;
+  position: relative; }
+
+.homepage main > div {
+  max-width: 500px; }
+  .homepage main > div p {
+    padding: 30px 0;
+    margin-left: 50px; }
+  .homepage main > div:nth-child(2) p {
+    padding-bottom: 0; }
+
+.homepage .sidebar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 400px;
+  background-color: #58595B;
+  height: 100%;
+  margin: 0; }
+
+@media screen and (max-width: 1000px) {
+  .homepage main {
+    padding-left: 330px; }
+  .homepage .sidebar {
+    width: 330px; }
+  .homepage main > div p {
+    margin-left: 15px; } }
+
+@media screen and (max-width: 730px) {
+  .homepage .sidebar {
+    display: none; }
+  .homepage main {
+    padding-left: 0; }
+  .homepage main > div:not(.sidebar) {
+    margin: 0 30px; }
+  .homepage main > div p {
+    margin: auto; }
+  footer .foot-info .foot-contact {
+    width: auto !important;
+    padding: 20px 30px !important; } }
+
+.hero-slider {
   width: 100%;
   position: relative;
   background-color: #7070a8; }
@@ -355,16 +401,13 @@ main:after {
     padding-left: 25px; }
 
 footer {
-  clear: both;
-  background-color: #e6e6e6; }
+  clear: both; }
   footer h5 {
     font-size: 20px; }
   footer .foot-info {
     margin: 0 12%;
     height: 250px;
-    display: flex;
     justify-content: space-between;
-    max-width: 1100px;
     margin: auto;
     overflow-x: hidden; }
     footer .foot-info .container-1 {
@@ -384,37 +427,49 @@ footer {
       footer .foot-info .foot-products li a:hover {
         color: black; }
     footer .foot-info > div {
-      width: 100%;
-      max-width: 250px;
       font-size: 17px; }
       footer .foot-info > div p {
-        color: #666666; }
+        color: #fff;
+        text-align: right; }
       footer .foot-info > div a {
-        width: 80%;
+        width: 50%;
         color: white;
-        margin: 15px auto;
+        margin: 15px 0;
         display: block;
         padding: 8px 0;
         text-align: center;
         border-radius: 1px;
         text-decoration: none;
         background-color: #007AC2;
-        transition-duration: 300ms; }
-      footer .foot-info > div a:hover {
-        background-color: #38bcf3; }
+        transition-duration: 300ms;
+        float: right; }
+    footer .foot-info .foot-contact,
+    footer .foot-info .foot-about {
+      width: 300px; }
     footer .foot-info .foot-contact,
     footer .foot-info .foot-products,
     footer .foot-info .foot-about {
       height: 100%;
       display: flex;
       flex-direction: column;
-      justify-content: center; }
-    footer .foot-info .foot-contact {
-      margin-left: 50px; }
+      justify-content: center;
+      float: left; }
+    footer .foot-info .foot-contact,
     footer .foot-info .foot-about {
-      max-width: 550px;
-      margin-left: 50px;
-      margin-right: 50px; }
+      padding: 0 50px; }
+    @media screen and (max-width: 1000px) {
+      footer .foot-info .foot-contact,
+      footer .foot-info .foot-about {
+        padding: 0 15px; } }
+    footer .foot-info .foot-about {
+      padding-right: 0; }
+    footer .foot-info .foot-contact {
+      background-color: #58595B; }
+    footer .foot-info .foot-about {
+      width: 500px; }
+      footer .foot-info .foot-about > div p {
+        color: #000;
+        text-align: left; }
       footer .foot-info .foot-about h3 {
         color: #007AC2;
         margin-bottom: 10px; }
@@ -442,32 +497,51 @@ footer {
       font-weight: normal; }
 
 @media screen and (max-width: 710px) {
-  footer {
-    padding-top: 5px; }
-    footer .foot-info {
-      height: 400px;
-      flex-direction: column;
-      justify-content: center; }
-      footer .foot-info .foot-contact,
-      footer .foot-info .foot-products {
-        height: auto;
-        margin: 20px auto; }
-        footer .foot-info .foot-contact a,
-        footer .foot-info .foot-products a {
-          margin-left: 0; }
-      footer .foot-info .foot-about {
-        width: auto;
-        margin-right: auto; }
-      footer .foot-info .foot-contact {
-        margin-top: 60px; }
-      footer .foot-info .foot-contact, footer .foot-info .foot-about {
-        margin-left: 20px; } }
+  footer .foot-info {
+    height: 400px;
+    flex-direction: column;
+    justify-content: center; }
+    footer .foot-info .foot-contact,
+    footer .foot-info .foot-products {
+      height: auto;
+      margin: 20px auto; }
+      footer .foot-info .foot-contact a,
+      footer .foot-info .foot-products a {
+        margin-left: 0; }
+    footer .foot-info .foot-about {
+      width: auto;
+      margin-right: auto; }
+    footer .foot-info .foot-contact {
+      margin-top: 60px; }
+    footer .foot-info .foot-contact,
+    footer .foot-info .foot-about {
+      margin-left: 20px; } }
 
 @media only screen and (max-width: 1080px) {
   footer .foot-info {
     justify-content: space-between; }
   footer .foot-contact {
     margin-left: 0px; } }
+
+@media screen and (max-width: 870px) {
+  footer .foot-info {
+    height: auto; }
+  footer .foot-info .foot-contact,
+  footer .foot-info .foot-about {
+    height: auto;
+    padding: 30px 10px; }
+  footer .foot-info .foot-contact {
+    width: 100%;
+    padding: 0;
+    margin: 0; }
+    footer .foot-info .foot-contact > div {
+      width: 100%;
+      max-width: 400px;
+      margin: auto; }
+      footer .foot-info .foot-contact > div p {
+        text-align: left; }
+      footer .foot-info .foot-contact > div a {
+        float: none; } }
 
 header {
   top: 0;
@@ -825,6 +899,9 @@ nav .mobile-nav ul {
 * {
   margin: 0;
   font-family: "Open Sans", Arial, serif; }
+
+hr {
+  border: 1px solid #007AC2; }
 
 a {
   color: #007AC2; }
