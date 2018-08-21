@@ -3,7 +3,7 @@
     color: white;
     padding: 20px 45px 20px 45px;
     background-color: $reflect-primary;
-
+    margin: 50px ;
     a {
         text-decoration: none;
         color: white;
@@ -81,12 +81,32 @@
     display: none;
 }
 
+.contact-new {
+    #wrapper {
+        max-width: unset;
+    }
+    footer .foot-info .foot-contact {
+        width: 30%;
+      }
+}
+
+
 .contact {
     display: flex;
-    justify-content: space-around;
+    //justify-content: space-around;
 
     > div {
-        width: 40%;
+        width: 30%;
+        padding: 50px;
+        &:first-of-type {
+            background-color: $sidebar-color;
+            color: white;
+        }
+        
+    }
+
+    .contact-form {
+        width: 37%;
     }
 
     @media screen and (max-width: 850px) {
@@ -108,15 +128,14 @@
 
     h1 {
         font-size: 40px;
+        font-weight: 300;
     }
 
     h3 {
         font-weight: 600;
     }
 
-    .info {
-        padding-left: 25px;
-    }
+    
 
-    padding: 50px 0;
+    
 }

@@ -1,0 +1,42 @@
+.company-profile-new {
+  margin-top: 72px;
+  footer .foot-info .foot-contact {
+    width: 30%;
+    box-sizing: border-box;
+  }
+}
+
+.profile-new {
+
+  display: flex;
+  .left-content {
+    display: inline-block;
+    width: 30%;
+    box-sizing: border-box;
+    text-align: right;
+    padding: 50px;
+    color: white;
+    background-color: $sidebar-color;
+    &:first-child p {
+      &:first-of-type {
+        padding-top: 10px;
+        font-size: 20px;
+        font-weight: 300;
+      }
+      font-weight: 200;
+    }
+
+  }
+  
+  .right-content {
+    width: 70%;
+    box-sizing: border-box;
+    float: right;
+    padding: 50px;
+
+    p {
+      padding: 7px 0 7px 0;
+      color: $sidebar-color;
+    }
+  }
+}

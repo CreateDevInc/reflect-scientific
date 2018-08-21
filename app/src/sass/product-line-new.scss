@@ -1,0 +1,50 @@
+.product-line-new {
+  margin-top: 72px;
+  footer .foot-info .foot-contact {
+    width: 40%;
+    box-sizing: border-box;
+  }
+}
+
+.p-line-new {
+
+  display: flex;
+  .left-content {
+    display: inline-block;
+    width: 40%;
+    box-sizing: border-box;
+    text-align: right;
+    padding: 50px;
+    
+    background-color: $sidebar-color;
+
+    img {
+      
+      max-width: 80%;
+      margin: auto;
+    }
+
+    a {
+      text-decoration: none;
+      color: white;
+      background-color: $reflect-primary;
+      padding: 5px 40px;
+      display: inline-block;
+      margin-top: 10px;
+    }
+
+
+  }
+  
+  .right-content {
+    width: 60%;
+    box-sizing: border-box;
+    float: right;
+    padding: 50px;
+
+    p {
+      padding: 7px 0 7px 0;
+      color: $sidebar-color;
+    }
+  }
+}
