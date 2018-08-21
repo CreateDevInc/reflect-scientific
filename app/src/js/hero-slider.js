@@ -3,8 +3,10 @@
   let imageArray = [
     {
       src: "images/hero4.jpg",
-      actionText: "Cryogenic Shipping Solutions<br class='hide-mobile'> for Biotech and Beyond",
-      subText: "Whether shipping produce at 4\xB0C or highly sensitive<br class='hide-mobile'> pharmaceuticals at -160\xB0C, we have a solution for you.",
+      actionText:
+        "Cryogenic Shipping Solutions<br class='hide-mobile'> for Biotech and Beyond",
+      subText:
+        "Whether shipping produce at 4\xB0C or highly sensitive<br class='hide-mobile'> pharmaceuticals at -160\xB0C, we have a solution for you.",
       actionButtonText: "Check it out",
       anchorHref: "product-lines.html",
       imageObject: null
@@ -12,7 +14,8 @@
     {
       src: "images/hero2.jpg",
       actionText: "Helping Fight Cancer",
-      subText: "Cryometrix is working with some of the largest<br class='hide-mobile'> bio/pharma companies to aid the fight against cancer.",
+      subText:
+        "Cryometrix is working with some of the largest<br class='hide-mobile'> bio/pharma companies to aid the fight against cancer.",
       actionButtonText: "Fight with us",
       anchorHref: "product-lines.html",
       imageObject: null
@@ -28,12 +31,12 @@
     {
       src: "images/hero3.jpg",
       actionText: "CAR-T Cancer Therapy",
-      subText: "Cryometrix provides state-of-the-art freezing technology for CAR-T therapy.",
+      subText:
+        "Cryometrix provides state-of-the-art <br class='hide-mobile'>freezing technology for CAR-T therapy.",
       actionButtonText: "Check it out",
       anchorHref: "product-lines.html",
       imageObject: null
-    },
-    
+    }
   ];
   //Load all images on pageload
   for (let i = 0; i < imageArray.length; i++) {
