@@ -19,38 +19,46 @@
     display: block;
     
   }
+
   .left-content {
-    display: inline-block;
     width: 40%;
-    box-sizing: border-box;
-    text-align: right;
+    display: inline-block;
     padding: 50px;
-    
+    box-sizing: border-box;
     background-color: $sidebar-color;
 
-
-    img {
-      
-      width: 85%;
-      margin: auto;
+    .center-it {
+      height: 31%;
+      display: flex;
+      align-items: flex-end;
+      flex-direction: column;
+      justify-content: center;
+      img {
+        width: 90%;
+      }
+      a {
+        color: white;
+        padding: 5px 40px;
+        display: inline-block;
+        margin-top: 10px;
+        text-decoration: none;
+        background-color: $reflect-primary;
+      }
     }
-
-    a {
-      text-decoration: none;
-      color: white;
-      background-color: $reflect-primary;
-      padding: 5px 40px;
-      display: inline-block;
-      margin-top: 10px;
+    @media screen and (max-width: 600px) {
+      padding: 20px 0;
     }
-    
 
     @media screen and (max-width: 850px) {
-      text-align: center;
-      padding-bottom: 15px;
-      //background-color: white;
       width: 100%;
-      //color: $sidebar-color;
+      text-align: center;
+      
+      .center-it {
+        align-items: center;
+        #HPLC_LOGO {
+          width: 60%;
+        }
+      }
     }
 
   }
