@@ -87,6 +87,12 @@
     }
     footer .foot-info .foot-contact {
         width: 30%;
+        @media screen and (max-width: 850px) {
+            width: 100%;
+        }
+        @media screen and (max-width: 1000px) {
+            padding: 0 50px;
+        }
       }
 }
 
@@ -115,15 +121,15 @@
         > div {
             box-sizing: border-box;
             width: 100%;
-            max-width: 600px;
-            margin: auto;
+            
             padding: 30px;
-            padding-top: 30px;
+            
         }
-        > div:first-child {
-            margin-bottom: 50px;
-            padding-top: 0;
+        .contact-form {
+            width: 100%;
+            margin: 0;
         }
+        
     }
 
     h1 {

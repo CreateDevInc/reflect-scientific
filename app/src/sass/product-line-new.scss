@@ -1,38 +1,65 @@
 .product-line-new {
   margin-top: 72px;
-  footer .foot-info .foot-contact {
-    width: 40%;
-    box-sizing: border-box;
+  @media screen and (max-width: 1080px){
+    margin-top: 60px;
+  }
+  @media screen and (min-width: 850px){
+    footer .foot-info .foot-contact {
+      width: 40%;
+      box-sizing: border-box;
+    }
   }
 }
 
 .p-line-new {
 
   display: flex;
-  .left-content {
-    display: inline-block;
-    width: 40%;
-    box-sizing: border-box;
-    text-align: right;
-    padding: 50px;
+
+  @media screen and (max-width: 850px) {
+    display: block;
     
+  }
+
+  .left-content {
+    width: 40%;
+    display: inline-block;
+    padding: 50px;
+    box-sizing: border-box;
     background-color: $sidebar-color;
 
-    img {
+    .center-it {
+      height: 31%;
+      display: flex;
+      align-items: flex-end;
+      flex-direction: column;
+      justify-content: center;
+      img {
+        width: 90%;
+      }
+      a {
+        color: white;
+        padding: 5px 40px;
+        display: inline-block;
+        margin-top: 10px;
+        text-decoration: none;
+        background-color: $reflect-primary;
+      }
+    }
+    @media screen and (max-width: 600px) {
+      padding: 20px 0;
+    }
+
+    @media screen and (max-width: 850px) {
+      width: 100%;
+      text-align: center;
       
-      max-width: 80%;
-      margin: auto;
+      .center-it {
+        align-items: center;
+        #HPLC_LOGO {
+          width: 60%;
+        }
+      }
     }
-
-    a {
-      text-decoration: none;
-      color: white;
-      background-color: $reflect-primary;
-      padding: 5px 40px;
-      display: inline-block;
-      margin-top: 10px;
-    }
-
 
   }
   
@@ -45,6 +72,10 @@
     p {
       padding: 7px 0 7px 0;
       color: $sidebar-color;
+    }
+    @media screen and (max-width: 850px) {
+      float: none;
+      width: 100%;
     }
   }
 }
