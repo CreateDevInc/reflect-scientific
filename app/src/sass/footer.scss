@@ -74,6 +74,13 @@ footer {
       width: 300px;
     }
 
+    @media screen and (max-width: 848px) {
+      .foot-contact,
+      .foot-about {
+        margin-left: 20px;
+      }
+    }
+
     .foot-contact,
     .foot-products,
     .foot-about {
@@ -113,7 +120,7 @@ footer {
       // margin-left: 50px;
       // margin-right: 50px;
       > div p {
-        color: #000;
+        color: #58595B;
         text-align: left;
       }
 
@@ -183,10 +190,6 @@ footer {
         margin-top: 60px;
       }
 
-      .foot-contact,
-      .foot-about {
-        margin-left: 20px;
-      }
     }
   }
 
@@ -201,6 +204,15 @@ footer {
 }
 
 $sidebar-break: 870px;
+
+@media screen and (max-width: 460px) {
+  footer .foot-info .foot-contact {
+    width: auto !important;
+    padding: 30px 10px !important;
+    margin-left: 20px;
+    margin-right: auto;
+  }
+}
 
 @media screen and (max-width: $sidebar-break) {
   footer .foot-info {
@@ -220,7 +232,13 @@ $sidebar-break: 870px;
     > div {
       width: 100%;
       max-width: 400px;
-      margin: auto;
+      // margin: auto;
+      padding: 30px 10px;
+      margin-left: 20px;
+
+      @media screen and (max-width: 460px) {
+        width: auto;
+      }
 
       p {
         text-align: left;
@@ -229,5 +247,13 @@ $sidebar-break: 870px;
         float: none;
       }
     }
+  }
+}
+
+
+@media screen and (min-width: 930px) {
+  .foot-contact p {
+    float: right;
+    max-width: 380px;
   }
 }

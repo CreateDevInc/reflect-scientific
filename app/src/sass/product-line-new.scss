@@ -6,13 +6,13 @@
   @media screen and (min-width: 850px){
     footer .foot-info .foot-contact {
       width: 40%;
+      max-width: 500px;
       box-sizing: border-box;
     }
   }
 }
 
 .p-line-new {
-
   display: flex;
 
   @media screen and (max-width: 850px) {
@@ -23,9 +23,14 @@
   .left-content {
     width: 40%;
     display: inline-block;
-    padding: 50px;
+    padding: 0 50px;
     box-sizing: border-box;
     background-color: $sidebar-color;
+    max-width: 500px;
+
+    @media screen and (max-width: 850px) {
+      max-width: none;
+    }
 
     .center-it {
       height: 31%;
@@ -46,7 +51,8 @@
       }
     }
     @media screen and (max-width: 600px) {
-      padding: 20px 0;
+      padding: 0 0;
+      max-width: none;
     }
 
     @media screen and (max-width: 850px) {
@@ -69,13 +75,22 @@
     float: right;
     padding: 50px;
 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
     p {
       padding: 7px 0 7px 0;
       color: $sidebar-color;
+      max-width: 500px;
     }
     @media screen and (max-width: 850px) {
       float: none;
       width: 100%;
+
+      p {
+        margin: auto;
+      }
     }
   }
 }

@@ -7,6 +7,7 @@
     footer .foot-info .foot-contact {
       width: 30%;
       box-sizing: border-box;
+      max-width: 500px;
     }
   }
     
@@ -31,6 +32,11 @@
     padding: 50px;
     color: white;
     background-color: $sidebar-color;
+
+    @media screen and (min-width: 851px) {
+      max-width: 500px;
+    }
+
     &:first-child p {
       &:first-of-type {
         padding-top: 10px;
@@ -54,6 +60,11 @@
     box-sizing: border-box;
     float: right;
     padding: 50px;
+    max-width: 800px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
     p {
       padding: 7px 0 7px 0;
