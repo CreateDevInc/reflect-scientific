@@ -23,7 +23,7 @@
   .left-content {
     width: 40%;
     display: inline-block;
-    padding: 0 50px;
+    padding: 0 50px 0 5%;
     box-sizing: border-box;
     background-color: $sidebar-color;
     max-width: 500px;
@@ -38,12 +38,15 @@
       align-items: flex-end;
       flex-direction: column;
       justify-content: center;
+      #HPLC_LOGO {
+        width: 50%;
+      }
       img {
-        width: 90%;
+        width: 100%;
       }
       a {
         color: white;
-        padding: 5px 40px;
+        padding: 5px 50px;
         display: inline-block;
         margin-top: 10px;
         text-decoration: none;
@@ -63,6 +66,7 @@
         align-items: center;
         #HPLC_LOGO {
           width: 60%;
+          
         }
       }
     }

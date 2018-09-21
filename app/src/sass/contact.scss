@@ -86,7 +86,12 @@
         max-width: unset;
     }
     footer .foot-info .foot-contact {
+        
         width: 30%;
+        @media only screen and (min-width: 1372px) {
+            
+            box-sizing: border-box;
+        }
         @media screen and (max-width: 850px) {
             width: 100%;
         }
@@ -107,6 +112,11 @@
         &:first-of-type {
             background-color: $sidebar-color;
             color: white;
+            @media only screen and (min-width: 1372px) {
+                padding-left: 5%;
+                
+                box-sizing: border-box;
+            }
         }
         
     }

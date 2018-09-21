@@ -48,7 +48,7 @@ footer {
       p {
         // color: $copy-background;
         color: #fff;
-        text-align: right;
+        text-align: left;
       }
 
       a {
@@ -64,9 +64,7 @@ footer {
         transition-duration: 300ms;
         float: right;
       }
-      a:hover {
-        // background-color: $btn-hover;
-      }
+      
     }
 
     .foot-contact,
@@ -255,5 +253,12 @@ $sidebar-break: 870px;
   .foot-contact p {
     float: right;
     max-width: 380px;
+  }
+}
+
+@media only screen and (min-width: 1372px) {
+  .foot-contact p {
+    text-align: left;
+    padding-left: 28%;
   }
 }
