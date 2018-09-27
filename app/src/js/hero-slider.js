@@ -44,6 +44,12 @@
     imageArray[i].imageObject.src = imageArray[i].src;
   }
 
+
+  const fakeEvent = {
+    target: {
+      className: "right"
+    },
+  }
   const heroSliders = document.querySelectorAll(".hero-slider");
 
   for (let x = 0; x < heroSliders.length; x++) {
@@ -51,6 +57,8 @@
     const dotsContainer = heroSlider.querySelector(".dot-container");
     const controlsContainer = heroSlider.querySelector(".controls-container");
 
+
+    const textBox = document.getElementById('text-box');
     const textAction = document.getElementById("actionText");
     const subText = document.getElementById("subText");
     const buttonText = document.getElementById("actionButton");
@@ -60,6 +68,10 @@
 
     let numOfSlides = imageArray.length;
     let currentSlide = 0;
+
+
+    // set the slides to auto rotate
+    let timeoutID = setTimeout(() => {changeSlide(fakeEvent)}, 5000);
 
     // hide the slider controls if there's only a single image to display
     if (numOfSlides <= 1) {
@@ -79,8 +91,11 @@
     function dotClick(e) {
       dots[currentSlide].classList.remove("active");
       currentSlide = e.target.data;
-      fillSlide(currentSlide);
+      fadeSlide();
       dots[currentSlide].classList.add("active");
+      setTimeout(() => {
+        fillSlide(currentSlide)
+      }, 700);
     }
 
     function fillSlide(cur) {
@@ -89,8 +104,17 @@
       buttonText.innerHTML = imageArray[cur].actionButtonText;
       buttonText.href = imageArray[cur].anchorHref;
       image[0].src = imageArray[cur].imageObject.src;
+
+      //fade back in
+      image[0].style.opacity = 1;
+      textBox.style.opacity = 1;
+
     }
 
+    function fadeSlide() {
+      image[0].style.opacity = 0;
+      textBox.style.opacity = 0;
+    }
     fillSlide(currentSlide);
 
     arrows[0].addEventListener("click", changeSlide);
@@ -100,8 +124,11 @@
 
     function changeSlide(e) {
       const arrowClass = e.target.className;
+      clearTimeout(timeoutID);
 
       dots[currentSlide].classList.remove("active");
+      
+      fadeSlide();
 
       if (arrowClass.includes("left") && currentSlide > 0) {
         currentSlide--;
@@ -116,9 +143,16 @@
         currentSlide = 0;
       }
 
-      fillSlide(currentSlide);
-
       dots[currentSlide].classList.add("active");
+      setTimeout(() => {
+        fillSlide(currentSlide)
+      }, 700);
+
+      timeoutID = setTimeout(() => {changeSlide(fakeEvent)}, 5000);
     }
+
   }
+
+  
+  
 })();
