@@ -439,6 +439,9 @@ footer {
     max-width: 380px; } }
 
 @media only screen and (min-width: 1372px) {
+  footer .foot-info .foot-contact {
+    padding: 0 50px 0 0;
+    width: 350px; }
   .foot-contact p {
     text-align: left;
     padding-left: 5vw; } }
