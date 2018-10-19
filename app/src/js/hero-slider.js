@@ -6,7 +6,7 @@
       actionText:
         "Cryogenic Shipping Solutions<br class='hide-mobile'> for Biotech and Beyond",
       subText:
-        "Whether shipping produce at 4\xB0C or highly sensitive<br class='hide-mobile'> pharmaceuticals at -160\xB0C, we have a solution for you.",
+        "Whether shipping produce at 4\xB0C or highly sensitive<br class='hide-mobile'> pharmaceuticals at -160\xB0C, we have a cold chain management solution for you.",
       actionButtonText: "Check it out",
       anchorHref: "product-lines.html",
       imageObject: null
