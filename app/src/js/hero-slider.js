@@ -15,7 +15,7 @@
       src: "images/hero2.jpg",
       actionText: "Helping Fight Cancer",
       subText:
-        "Cryometrix is working with some of the largest<br class='hide-mobile'> bio/pharma companies to aid the fight against cancer.",
+        "Cryometrix is working with some of the largest<br class='hide-mobile'> Bio/Pharma companies to aid the fight against cancer.",
       actionButtonText: "Fight with us",
       anchorHref: "product-lines.html",
       imageObject: null
