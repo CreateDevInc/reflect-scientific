@@ -810,6 +810,14 @@ nav .mobile-nav ul {
       box-sizing: border-box;
       max-width: 500px; } }
 
+.section-header {
+  text-align: center;
+  background: #58595B;
+  padding: 10px; }
+  .section-header h2 {
+    font-weight: 500;
+    color: white; }
+
 .profile-new {
   display: flex; }
   @media screen and (max-width: 850px) {
