@@ -14,6 +14,17 @@
   
 }
 
+.section-header {
+      text-align: center;
+    background: $sidebar-color;
+    padding: 10px;
+
+    h2 {
+      font-weight: 500;
+      color: white;
+    }
+}
+
 .profile-new {
 
   display: flex;
