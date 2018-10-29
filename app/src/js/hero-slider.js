@@ -71,7 +71,7 @@
 
 
     // set the slides to auto rotate
-    let timeoutID = setTimeout(() => {changeSlide(fakeEvent)}, 12000);
+    let timeoutID = setTimeout(() => {changeSlide(fakeEvent)}, 7000);
 
     // hide the slider controls if there's only a single image to display
     if (numOfSlides <= 1) {
@@ -148,7 +148,7 @@
         fillSlide(currentSlide)
       }, 700);
 
-      timeoutID = setTimeout(() => {changeSlide(fakeEvent)}, 12000);
+      timeoutID = setTimeout(() => {changeSlide(fakeEvent)}, 7000);
     }
 
   }
