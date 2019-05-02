@@ -889,7 +889,7 @@ nav .mobile-nav ul {
       .p-line-new .left-content {
         max-width: none; } }
     .p-line-new .left-content .center-it {
-      height: 31%;
+      padding: 50px 0;
       display: flex;
       align-items: flex-end;
       flex-direction: column;
