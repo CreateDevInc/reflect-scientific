@@ -1,0 +1,23 @@
+Reflect Meeting 3/5
+
+Boostability - get in touch with them so that they can send you details about the SEO implementations
+
+Adding a blog to Crymetrix
+	"blog" in header links
+	Another section for "whitepapers" (research section/technical docs) "Applications/Whitepapers"
+	
+
+Changing homepage to two rows of 3 products. 
+
+Adding upcoming events/trade shows section to the homepage 
+	Has links to the blogpost/the tradeshow site
+	
+
+CONTENT for all pages
+
+
+LCGCvials 
+	homepage links need to be fixed. The links filter down the storefront to the specific products
+
+	
+	
