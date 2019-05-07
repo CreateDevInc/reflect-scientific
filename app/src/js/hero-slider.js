@@ -68,10 +68,11 @@
 
     let numOfSlides = imageArray.length;
     let currentSlide = 0;
+    let slideTime = 7000;
 
 
     // set the slides to auto rotate
-    let timeoutID = setTimeout(() => {changeSlide(fakeEvent)}, 7000);
+    let timeoutID = setTimeout(() => {changeSlide(fakeEvent)}, slideTime);
 
     // hide the slider controls if there's only a single image to display
     if (numOfSlides <= 1) {
@@ -148,7 +149,7 @@
         fillSlide(currentSlide)
       }, 700);
 
-      timeoutID = setTimeout(() => {changeSlide(fakeEvent)}, 7000);
+      timeoutID = setTimeout(() => {changeSlide(fakeEvent)}, slideTime);
     }
 
   }
